@@ -1,11 +1,11 @@
 import '../styles/Home.css';
 
-function App() {
+function Home() {
   return (
-    <div className="App">
+    <div className="Home">
      tadam
     </div>
   );
 }
 
-export default App;
+export default Home;
