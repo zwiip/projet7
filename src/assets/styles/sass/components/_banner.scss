@@ -1,0 +1,11 @@
+.banner {
+    width: 100%;
+    height: 223px;
+    background-color: red;
+}
+
+@media (max-width: 768px) {
+    .Home .banner {
+        height: 111px;
+    }
+}
