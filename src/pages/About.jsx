@@ -1,10 +1,11 @@
 import React from 'react'
 import '../assets/styles/sass/main.scss'
 import Banner from '../components/banner'
+import image from '../assets/images/banner-about.png'
 
 const About = () => (
     <div>
-        <Banner image="../assets/images/banner-about.png" />
+        <Banner image={image} />
     </div>
 );
 

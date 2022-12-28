@@ -1,19 +1,77 @@
+body {
+    font-family: 'Montserat', sans-serif;
+    font-weight: 500;
+    background-color: $color-light;
+    //color: set-font-color();
+    color: $color-main;
+}
 
+/*@function set-font-color() {
+    @if (lightness(background-color) < lightness($color-main)) {
+        @return $color-main;
+    } @else {
+        @return $color-light;
+    }
+}*/
+
+nav > a {
+    text-decoration: none;
+    color: unset;
+
+}
 
 /* Notes de travail
-header desktop : Montserrat medium 24 ff6060
-soulignement avec hover
+medium : 500
+regular : 400
+bold : 700
 
-header mobile : Montserrat medium 12 ff6060 majuscule
+header desktop :  24 ff6060
 soulignement avec hover
+    M : --> 12 majuscule
 
 banner desktop : "Chez vous, partout et ailleurs"
-Montserrat medium 48 #FFFFFF
+  48 #FFFFFF
+    M : --> 24
 
-banner mobile : montserrat medium 24 ffffff
+thumb - titre de la location (D & M):   18 ffffff
 
-thumb - titre de la location (D & M): Montserrat Medium 18
+fiche logement D :
+    carroussel "1/4" :   18 ffffff
+    title h1 :   36 ff6060
+    localisation :   18 ff6060
+    tag :   14 ffffff
+    title dropdown :   18 ffffff
+    content dropdown :   18 ff6060
+    host :   18 ff6060
 
+fiche logement M :
+    title h1 : --> 18
+    localisation : --> 14
+    tag : --> 10
+    title dropdown : --> 13
+    content dropdown : --> 12
+    host : --> 12
 
+erreur 404 D :
+    404 :  Bold 288 ff6060
+    oups :  36  ff6060
+    retourner :   18 soulignement ff6060
 
+erreur 404 M :
+    404 : --> 96
+    oups : --> 18
+    retourner : --> 14
+
+about D :
+    dropdown title :  24  ffffff
+    content :  regular 24 ff6060
+
+about M : 
+    title : --> 13
+    content : --> 12
+
+footer D :
+    droits :   24 ffffff
+
+footer M : --> 12
 */
