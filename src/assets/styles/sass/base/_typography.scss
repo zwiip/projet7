@@ -1,9 +1,13 @@
 body {
-    font-family: 'Montserat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     background-color: $color-light;
     //color: set-font-color();
     color: $color-main;
+    line-height: 142.6%;
+    @media (max-width: 768px) {
+        line-height: normal;
+    }
 }
 
 /*@function set-font-color() {
@@ -17,8 +21,19 @@ body {
 nav > a {
     text-decoration: none;
     color: unset;
-
 }
+
+h1 {
+    font-weight: 500;
+    font-size: 2.6em;
+    display: flex;
+    flex-wrap: wrap;
+    @media (max-width: 768px) {
+        font-size: 2em;
+    }
+}
+
+
 
 /* Notes de travail
 medium : 500
