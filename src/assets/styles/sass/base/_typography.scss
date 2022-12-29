@@ -5,8 +5,10 @@ body {
     //color: set-font-color();
     color: $color-main;
     line-height: 142.6%;
+    font-size: 20px;
     @media (max-width: 768px) {
         line-height: normal;
+        font-size: smaller;
     }
 }
 
@@ -25,11 +27,11 @@ nav > a {
 
 h1 {
     font-weight: 500;
-    font-size: 2.6em;
+    font-size: 2.4em;
     display: flex;
     flex-wrap: wrap;
     @media (max-width: 768px) {
-        font-size: 2em;
+        font-size: 2.3em;
     }
 }
 
