@@ -1,4 +1,5 @@
 import { useRouteError } from "react-router-dom";
+import '../assets/styles/sass/main.scss'
 
 function NotFound() {
   const error = useRouteError();
