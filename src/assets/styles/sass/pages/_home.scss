@@ -1,6 +1,6 @@
 .cardContainer {
     background-color: $color-boxes;
-    padding: 50px;
+    padding: 25px;
     border-radius: 25px;
     margin: 42px 0 42px 0;
     display: flex;
@@ -11,5 +11,7 @@
         padding: 0;
         border-radius: 0;
         margin: 20px 0 20px 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 }
