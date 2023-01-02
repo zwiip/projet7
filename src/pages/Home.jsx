@@ -3,6 +3,7 @@ import Card from '../components/Card';
 import '../assets/styles/sass/main.scss';
 import image from "../assets/images/banner-home.png";
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 /**
  * Affichage des éléments structurant la page
@@ -22,6 +23,9 @@ function Home() {
     .catch((error) => console.error(error));
 }, []);
   console.log('je récupère les data', data)
+
+  const redirect = useNavigate();
+
   return (
     <div className="Home">
       <div>
@@ -29,8 +33,13 @@ function Home() {
       </div>
       <div className='cardContainer'>
       {data ? data.map(item => {
+
+          const handleClick = () => {
+            redirect(`/location/${item.id}`)
+          }
+
           return (
-            <Card 
+            <Card onClick = {handleClick}
               key={item.id} 
               title={item.title} 
               cover={item.cover}
