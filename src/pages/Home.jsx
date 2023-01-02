@@ -11,9 +11,9 @@ import { useState, useEffect } from 'react';
  *     - les cards des fiches logements
  */
 function Home() {
-  const [data, setData] = useState(null);
+  const [data, setData] = useState([]);
   useEffect(() => {
-    fetch('../assets/datas/logements.json')
+    fetch('./logements.json')
     .then((res) => {
       console.log(res);
       return res.json();
