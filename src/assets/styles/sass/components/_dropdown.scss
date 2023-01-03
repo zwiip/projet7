@@ -1,0 +1,45 @@
+.arrow img {
+    @media (max-width: 768px) {
+        width: 60%;
+    }
+}
+
+.arrow-up {
+    transform: rotate(180deg);
+  }
+  
+  .arrow-down {
+    transform: rotate(0deg);
+  }
+
+.about .dropdown-box {
+    margin: 30px 100px;
+    @media (max-width: 768px) {
+        margin: 20px 0;
+    }
+    &_header {
+        background-color: $color-main;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $color-light;
+        padding: 0 4%;
+        border-radius: 5px;
+        height: 47px;
+        @media (max-width: 768px) {
+            height: 30px;
+        }
+    }
+    &_title {
+        font-weight: 500;
+        font-size: larger;
+    }
+    &_content {
+        padding: 1% 4%;
+        background-color: $color-boxes;
+        p {
+            font-weight: 400;
+            font-size: larger;
+        }
+    }
+}
