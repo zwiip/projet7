@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import '../assets/styles/sass/main.scss';
 import Home from '../pages/Home';
 import NotFound from '../pages/NotFound';
 import About from '../pages/About';
