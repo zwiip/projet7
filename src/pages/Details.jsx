@@ -13,8 +13,11 @@ function Details() {
                     <p>localisation</p>
                 </div>
                 <div className="details_header_user">
+                    <div className="details_header_name">
+                    <p>prénom</p>
                     <p>nom</p>
-                    <img src="" alt="" className="details_header_user_avatar" />
+                    </div>
+                    <img src="" alt="" className="details_header_avatar" />
                 </div>
             </div>
             <div className="details_features">

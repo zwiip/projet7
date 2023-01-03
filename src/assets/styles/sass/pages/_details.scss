@@ -1,4 +1,27 @@
 .details {
+    &_header {
+        display: flex;
+        justify-content: space-between;
+        &_user {
+            display: flex;
+            justify-content: right;
+            align-items: center;
+        }
+        &_name p {
+            padding: 0;
+            margin: 0;
+            text-align: right;
+        }
+        &_avatar {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            margin-left: 10px;
+            background-color: grey;
+
+        }
+        
+    }
     &_content {
         display: flex;
         justify-content: space-between;
