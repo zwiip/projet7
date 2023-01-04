@@ -1,10 +1,12 @@
 import Dropdown from "../components/Dropdown"
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom'
 
 
 function Details() {
     const { id } = useParams();
+    const location = useLocation();
 
     const [data, setData] = useState([]);
     useEffect(() => {
@@ -18,7 +20,6 @@ function Details() {
     }, []);
 
     console.log('je récupère les data', data)
-    
 
     if (data.length === 0) {
         return (
@@ -26,6 +27,14 @@ function Details() {
         )
     }
     const item = data.find(item => item.id === id);
+
+    /**
+     * Permet de rediriger l'user si l'id n'existe pas
+     */
+    if (!item) {
+        window.location.replace('/NotFound');
+        return null;
+    }
 
     return (
         <div className="details">
