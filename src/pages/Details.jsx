@@ -1,7 +1,32 @@
 import Dropdown from "../components/Dropdown"
+import { useParams } from "react-router-dom";
+import { useState, useEffect } from 'react';
 
 
 function Details() {
+    const { id } = useParams();
+
+    const [data, setData] = useState([]);
+    useEffect(() => {
+        fetch(`../logements.json`)
+        .then((res) => {
+            console.log(res);
+            return res.json();
+          })
+            .then((data) => setData(data))
+            .catch((error) => console.error(error));          
+    }, []);
+
+    console.log('je récupère les data', data)
+    
+
+    if (data.length === 0) {
+        return (
+            <p>problème de chargement des datas</p>
+        )
+    }
+    const item = data.find(item => item.id === id);
+
     return (
         <div className="details">
             <div className="details_carrousel">
@@ -9,13 +34,13 @@ function Details() {
             </div>
             <div className="details_header">
                 <div>
-                    <h1>titre</h1>
-                    <p>localisation</p>
+                    <h1>{item.title}</h1>
+                    <p>{item.location}</p>
                 </div>
                 <div className="details_header_user">
                     <div className="details_header_name">
-                    <p>prénom</p>
-                    <p>nom</p>
+                        <p>prénom</p>
+                        <p>nom</p>
                     </div>
                     <img src="" alt="" className="details_header_avatar" />
                 </div>
@@ -32,10 +57,10 @@ function Details() {
             </div>
             <div className="details_content">
                 <Dropdown title="Description">
-                    <p></p>
+                    <p>{item.description}</p>
                 </Dropdown>
                 <Dropdown title="Équipements">
-                    <p></p>
+                    <p>{item.equipments}</p>
                 </Dropdown>
             </div>
         </div>
