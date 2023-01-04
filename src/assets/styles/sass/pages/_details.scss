@@ -27,7 +27,7 @@
     &_content {
         display: flex;
         justify-content: space-between;
-        @media (max-width: 768px) {
+        @media (max-width: $breakpoint) {
             flex-direction: column;
         }
     }

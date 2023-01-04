@@ -6,7 +6,7 @@ footer {
     color: $color-light;
     padding-top: 50px;
     margin-top: 15%;
-    @media (max-width: 768px) {
+    @media (max-width: $breakpoint) {
      padding: 45px;   
     }
     img {

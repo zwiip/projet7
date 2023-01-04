@@ -7,7 +7,7 @@ header {
     
     img {
         max-height: 68px;
-        @media (max-width: 768px) {
+        @media (max-width: $breakpoint) {
             height: 47px;
         }
     }
@@ -18,7 +18,7 @@ nav {
     justify-content: space-between;
     a {
         margin-left: 64px;
-        @media (max-width: 768px) {
+        @media (max-width: $breakpoint) {
             text-transform: uppercase;
             margin-left: 15px;
         }

@@ -1,5 +1,5 @@
 .arrow img {
-    @media (max-width: 768px) {
+    @media (max-width: $breakpoint) {
         width: 60%;
     }
 }
@@ -30,21 +30,21 @@
 
 .about .dropdown-box {
     margin: 30px 100px;
-    @media (max-width: 768px) {
+    @media (max-width: $breakpoint) {
         margin: 20px 0;
     }
     &_header {
         height: 47px;
-        @media (max-width: 768px) {
+        @media (max-width: $breakpoint) {
             height: 30px;
         }
     }
     &_title {
-        font-weight: 500;
+        font-weight: $weight-medium;
         font-size: larger;
     }
     &_content p {
-            font-weight: 400;
+            font-weight: $weight-regular;
             font-size: larger;
     }
 }
@@ -52,22 +52,22 @@
 .details .dropdown-box {
     margin: 30px 0;
     width: 47%;
-    @media (max-width: 768px) {
+    @media (max-width: $breakpoint) {
         margin: 20px 0;
         width: 100%;
     }
     &_header {
         height: 52px;
-        @media (max-width: 768px) {
+        @media (max-width: $breakpoint) {
             height: 30px;
         }
     }
     &_title {
-        font-weight: 500;
+        font-weight: $weight-medium;
         font-size: large;
     }
     &_content p {
-            font-weight: 400;
+            font-weight: $weight-regular;
             font-size: large;
     }
 }

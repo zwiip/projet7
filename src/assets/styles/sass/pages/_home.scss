@@ -6,7 +6,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    @media (max-width: 768px) {
+    @media (max-width: $breakpoint) {
         background-color: unset;
         padding: 0;
         border-radius: 0;
