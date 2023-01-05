@@ -2,6 +2,17 @@
     &_header {
         display: flex;
         justify-content: space-between;
+        h1 {
+            font-size: 36pt;
+            @media (max-width: $breakpoint) {
+                font-size: 18pt;
+            }
+        }
+        p {
+            @media (max-width: $breakpoint) {
+                font-size: 14pt;
+            }
+        }
         &_user {
             display: flex;
             justify-content: right;

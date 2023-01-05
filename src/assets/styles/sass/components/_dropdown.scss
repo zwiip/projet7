@@ -21,6 +21,9 @@
         color: $color-light;
         padding: 0 4%;
         border-radius: 5px;
+        @media (max-width: $breakpoint) {
+            font-size: 13pt;
+        }
     }
     &_content {
         padding: 1% 4%;
