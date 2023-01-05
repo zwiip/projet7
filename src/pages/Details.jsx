@@ -4,8 +4,7 @@ import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom'
 import '../assets/styles/sass/main.scss';
 import Gallery from "../components/Gallery";
-
-
+import Tag from "../components/Tag";
 
 function Details() {
     const { id } = useParams();
@@ -57,9 +56,7 @@ function Details() {
             </div>
             <div className="details_features">
                 <div className="details_features_tags">
-                    <tag />
-                    <tag />
-                    <tag />
+                    <Tag tags={item.tags} />
                 </div>
                 <div className="details_features_stars">
 

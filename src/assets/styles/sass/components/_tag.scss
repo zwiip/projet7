@@ -1,0 +1,11 @@
+.tag {
+    height: 25px;
+    background-color: $color-main;
+    border-radius: 10px;
+    color: $color-light;
+    font-size: 14pt;
+    margin-right: 10px;
+    @media (max-width: $breakpoint) {
+        font-size: 10pt;
+    }
+}
