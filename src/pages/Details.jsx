@@ -2,6 +2,9 @@ import Dropdown from "../components/Dropdown"
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom'
+import '../assets/styles/sass/main.scss';
+import Gallery from "../components/Gallery";
+
 
 
 function Details() {
@@ -38,9 +41,7 @@ function Details() {
 
     return (
         <div className="details">
-            <div className="details_carrousel">
-                Ici s'affichera mon carrousel
-            </div>
+            <Gallery images={item.pictures} />
             <div className="details_header">
                 <div>
                     <h1>{item.title}</h1>
