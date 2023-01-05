@@ -2,7 +2,6 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-weight: $weight-medium;
     background-color: $color-light;
-    //color: set-font-color();
     color: $color-main;
     line-height: 142.6%;
     font-size: 18pt;
@@ -11,14 +10,6 @@ body {
         font-size: 12pt;
     }
 }
-
-/*@function set-font-color() {
-    @if (lightness(background-color) < lightness($color-main)) {
-        @return $color-main;
-    } @else {
-        @return $color-light;
-    }
-}*/
 
 nav > a {
     text-decoration: none;

@@ -66,8 +66,9 @@
         font-weight: $weight-medium;
         font-size: large;
     }
-    &_content p {
+    &_content p, li {
             font-weight: $weight-regular;
             font-size: large;
+            list-style-type: none;
     }
 }

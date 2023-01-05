@@ -2,16 +2,12 @@
     &_header {
         display: flex;
         justify-content: space-between;
-        h1, p {
-            margin: 0;
-        }
         &_user {
             display: flex;
             justify-content: right;
             align-items: center;
         }
         &_name p {
-            padding: 0;
             margin: 0;
             text-align: right;
         }

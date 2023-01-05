@@ -11,12 +11,12 @@ function Details() {
     const [data, setData] = useState([]);
     useEffect(() => {
         fetch(`../logements.json`)
-        .then((res) => {
-            console.log(res);
-            return res.json();
-          })
+            .then((res) => {
+                console.log(res);
+                return res.json();
+            })
             .then((data) => setData(data))
-            .catch((error) => console.error(error));          
+            .catch((error) => console.error(error));
     }, []);
 
     console.log('je récupère les data', data)
@@ -48,10 +48,10 @@ function Details() {
                 </div>
                 <div className="details_header_user">
                     <div className="details_header_name">
-                        <p>prénom</p>
-                        <p>nom</p>
+                        <p>{item.host.name.split(' ')[0]}</p>
+                        <p>{item.host.name.split(' ')[1]}</p>
                     </div>
-                    <img src="" alt="" className="details_header_avatar" />
+                    <img src={item.host.picture} alt={item.host.name} className="details_header_avatar" />
                 </div>
             </div>
             <div className="details_features">
@@ -69,7 +69,11 @@ function Details() {
                     <p>{item.description}</p>
                 </Dropdown>
                 <Dropdown title="Équipements">
-                    <p>{item.equipments}</p>
+                    <ul>
+                        {item.equipments.map(equipment => (
+                            <li key={equipment}>{equipment}</li>
+                        ))}
+                    </ul>
                 </Dropdown>
             </div>
         </div>
