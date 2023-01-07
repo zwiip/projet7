@@ -4,7 +4,7 @@
     color: $color-light;
     background: rgba(0, 0, 0, 0.3);
     background-blend-mode: darken;
-    background-position: 50% 50%;
+    background-position: 50% 30%;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -19,5 +19,8 @@
     }
     .Home .banner {
         height: 111px;
+    }
+    .about .banner {
+        background-position: top;
     }
 }

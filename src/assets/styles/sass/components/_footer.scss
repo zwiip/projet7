@@ -5,13 +5,14 @@ footer {
     background-color: black;
     color: $color-light;
     padding-top: 50px;
-    font-size: 24pt;
+    font-size: 24px;
     @media (max-width: $breakpoint) {
         padding: 45px;   
-        font-size: 12pt;
+        font-size: 12px;
     }
     img {
         filter: brightness(3);
         max-height: 39.44px;
+        margin-bottom: 25px;
     }
 }

@@ -23,7 +23,7 @@
         border-radius: 5px;
         cursor: pointer;
         @media (max-width: $breakpoint) {
-            font-size: 13pt;
+            font-size: 13px;
         }
     }
     &_content {
@@ -45,16 +45,16 @@
     }
     &_title {
         font-weight: $weight-medium;
-        font-size: 24pt;
+        font-size: 24px;
         @media (max-width: $breakpoint) {
-            font-size: 13pt;
+            font-size: 13px;
         }
     }
     &_content p {
             font-weight: $weight-regular;
-            font-size: 24pt;
+            font-size: 24px;
             @media (max-width: $breakpoint) {
-                font-size: 12pt;
+                font-size: 12px;
             }
     }
 }
@@ -74,12 +74,18 @@
     }
     &_title {
         font-weight: $weight-medium;
-        font-size: large;
+        font-size: 18px;
+        @media (max-width: $breakpoint) {
+            font-size: 13px;
+        }
     }
     &_content p, ul, li {
             font-weight: $weight-regular;
-            font-size: large;
             list-style-type: none;
             padding-left: 0;
+            font-size: 18px;
+            @media (max-width: $breakpoint) {
+                font-size: 12px;
+            }
     }
 }

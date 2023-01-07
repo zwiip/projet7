@@ -4,28 +4,30 @@
     justify-content: center;
     align-items: center;
     h1 {
-        font-size: 288pt;
+        font-size: 288px;
         font-weight: 700;
         margin: 200px 0 100px 0;
         @media (max-width: $breakpoint) {
-            font-size: 96pt;
-            margin: 200px 0 30px 0;
+            font-size: 96px;
+            margin: 200px 0 5px 0;
         }
     }
     p {
-        font-size: 36pt;
+        font-size: 36px;
         text-align: center;
         padding: 2%;
         line-height: normal;
+        line-height: 143%;
         @media (max-width: $breakpoint) {
-            font-size: 18pt;
+            font-size: 18px;
+            padding: 0 10%;
         }
     }
     a {
         margin: 190px 0 150px 0;
         color: $color-main;
         @media (max-width: $breakpoint) {
-            font-size: 14pt;
+            font-size: 14px;
             margin: 140px 0 235px 0;
         }
     }

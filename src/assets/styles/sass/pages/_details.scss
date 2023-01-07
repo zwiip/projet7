@@ -7,16 +7,16 @@
         }
         &_housing {
             h1 {
-                font-size: 36pt;
+                font-size: 36px;
                 margin-bottom: 8px;
                 @media (max-width: $breakpoint) {
-                    font-size: 18pt;
+                    font-size: 18px;
                 }
             }
             p {
                 margin-top: 8px;
                 @media (max-width: $breakpoint) {
-                    font-size: 14pt;
+                    font-size: 14px;
                 }
             }
         }
