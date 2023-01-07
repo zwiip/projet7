@@ -4,6 +4,7 @@ body {
     background-color: $color-light;
     color: $color-main;
     font-size: 18pt;
+    line-height: 142.6%;
     @media (max-width: $breakpoint) {
         line-height: normal;
         font-size: 12pt;

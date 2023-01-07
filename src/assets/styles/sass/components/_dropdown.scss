@@ -21,6 +21,7 @@
         color: $color-light;
         padding: 0 4%;
         border-radius: 5px;
+        cursor: pointer;
         @media (max-width: $breakpoint) {
             font-size: 13pt;
         }
@@ -44,11 +45,17 @@
     }
     &_title {
         font-weight: $weight-medium;
-        font-size: larger;
+        font-size: 24pt;
+        @media (max-width: $breakpoint) {
+            font-size: 13pt;
+        }
     }
     &_content p {
             font-weight: $weight-regular;
-            font-size: larger;
+            font-size: 24pt;
+            @media (max-width: $breakpoint) {
+                font-size: 12pt;
+            }
     }
 }
 
@@ -69,9 +76,10 @@
         font-weight: $weight-medium;
         font-size: large;
     }
-    &_content p, li {
+    &_content p, ul, li {
             font-weight: $weight-regular;
             font-size: large;
             list-style-type: none;
+            padding-left: 0;
     }
 }

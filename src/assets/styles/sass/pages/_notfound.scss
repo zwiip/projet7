@@ -1,21 +1,33 @@
 .notfound {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     h1 {
-        font-size: 15em;
+        font-size: 288pt;
         font-weight: 700;
-        margin: 8% 0;
+        margin: 200px 0 100px 0;
+        @media (max-width: $breakpoint) {
+            font-size: 96pt;
+            margin: 200px 0 30px 0;
+        }
     }
     p {
-        font-size: xx-large;
+        font-size: 36pt;
         text-align: center;
         padding: 2%;
+        line-height: normal;
+        @media (max-width: $breakpoint) {
+            font-size: 18pt;
+        }
     }
     a {
-        margin: 5% 0;
+        margin: 190px 0 150px 0;
         color: $color-main;
-        font-size: larger;
+        @media (max-width: $breakpoint) {
+            font-size: 14pt;
+            margin: 140px 0 235px 0;
+        }
     }
 }
 

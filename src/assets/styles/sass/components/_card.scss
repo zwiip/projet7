@@ -13,6 +13,7 @@
     background-size: cover;
     position: relative;
     margin: 25px;
+    cursor: pointer;
     @media (max-width: $breakpoint) {
         margin: 10px 0 10px 0;
     }
@@ -27,7 +28,10 @@
         left: 5%;
         color: $color-light;
         font-weight: $weight-medium;
-        font-size:large;
+        font-size: 18pt;
+        @media (max-width: $breakpoint) {
+            font-size: 18pt;
+        }
     }
 }
 

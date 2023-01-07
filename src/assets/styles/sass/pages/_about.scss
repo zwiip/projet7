@@ -1,0 +1,6 @@
+.about {
+    margin-bottom: 200px;
+    @media (max-width: $breakpoint) {
+        margin-bottom: 170px;
+    }
+}
