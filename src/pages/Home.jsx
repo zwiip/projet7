@@ -5,10 +5,10 @@ import image from "../assets/images/banner-home.png";
 import { useState, useEffect } from 'react';
 
 /**
- * Affichage des éléments structurant la page
- * @returns un conteneur "Home" dans lequel vient s'insérer :
+ * Permet de récupérer les données de logements afin d'afficher les éléments de la page d'accueil
+ * @returns un conteneur "Home" dans lequel vient s'insérer dynamiquent :
  *     - le composant banner
- *     - les cards des fiches logements
+ *     - les cards pointant vers les fiches logements
  */
 function Home() {
   const [data, setData] = useState([]);

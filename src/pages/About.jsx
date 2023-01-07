@@ -3,6 +3,12 @@ import Banner from '../components/banner'
 import image from '../assets/images/banner-about.png'
 import Dropdown from '../components/Dropdown';
 
+/**
+ * Permet d'afficher les éléments composant la page d'à propos
+ * @returns un conteneur "about" qui affiche :
+ *    - le composant banner
+ *    - plusieurs composants Dropdown, et qui en définit le contenu
+ */
 const About = () => (
     <div className='about'>
         <Banner image={image} />

@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom'
 import '../assets/styles/sass/main.scss'
 
+/**
+ * Composant fonctionnel qui permet d'insérer les éléments de la page 404 et un lien pour retourner à l'accueil.
+ */
 function NotFound() {
 
   return (
