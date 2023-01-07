@@ -1,0 +1,12 @@
+.star {
+    color: $color-stars;
+    font-size: 30px;
+    @media (max-width: $breakpoint) {
+        font-size: 25px;
+    }
+  }
+  
+  .filled {
+    color: $color-main;
+  }
+  

@@ -5,6 +5,7 @@ import { useLocation } from 'react-router-dom'
 import '../assets/styles/sass/main.scss';
 import Gallery from "../components/Gallery";
 import Tag from "../components/Tag";
+import Stars from "../components/Stars";
 
 function Details() {
     const { id } = useParams();
@@ -42,26 +43,30 @@ function Details() {
         <div className="details">
             <Gallery images={item.pictures} />
             <div className="details_header">
-                <div>
-                    <h1>{item.title}</h1>
-                    <p>{item.location}</p>
-                </div>
-                <div className="details_header_user">
-                    <div className="details_header_name">
-                        <p>{item.host.name.split(' ')[0]}</p>
-                        <p>{item.host.name.split(' ')[1]}</p>
+                <div className="details_header_housing">
+                    <div>
+                        <h1>{item.title}</h1>
+                        <p>{item.location}</p>
                     </div>
-                    <img src={item.host.picture} alt={item.host.name} className="details_header_avatar" />
+                    <div className="details_features_tags">
+                        <Tag tags={item.tags} />
+                    </div>
                 </div>
-            </div>
-            <div className="details_features">
-                <div className="details_features_tags">
-                    <Tag tags={item.tags} />
-                </div>
-                <div className="details_features_stars">
 
+                <div className="details_header_user">
+                    <div className="details_header_user_info">
+                        <div className="details_header_name">
+                            <p>{item.host.name.split(' ')[0]}</p>
+                            <p>{item.host.name.split(' ')[1]}</p>
+                        </div>
+                        <img src={item.host.picture} alt={item.host.name} className="details_header_avatar" />
+                    </div>
+                    <div className="details_header_stars">
+                        <Stars rating={item.rating} />
+                    </div>
                 </div>
             </div>
+                
             <div className="details_content">
                 <Dropdown title="Description">
                     <p>{item.description}</p>

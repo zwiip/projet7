@@ -2,25 +2,48 @@
     &_header {
         display: flex;
         justify-content: space-between;
-        h1 {
-            font-size: 36pt;
-            @media (max-width: $breakpoint) {
-                font-size: 18pt;
-            }
+        @media (max-width: $breakpoint) {
+            flex-direction: column;
         }
-        p {
-            @media (max-width: $breakpoint) {
-                font-size: 14pt;
+        &_housing {
+            h1 {
+                font-size: 36pt;
+                margin-bottom: 8px;
+                @media (max-width: $breakpoint) {
+                    font-size: 18pt;
+                }
+            }
+            p {
+                margin-top: 8px;
+                @media (max-width: $breakpoint) {
+                    font-size: 14pt;
+                }
             }
         }
         &_user {
             display: flex;
-            justify-content: right;
-            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            @media (max-width: $breakpoint) {
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 20px;
+            }
+            &_info {
+                display: flex;
+                align-items: center;
+                margin-bottom: 25px;
+                @media (max-width: $breakpoint) {
+                    margin-bottom: 0;
+                }
+            }
         }
         &_name p {
             margin: 0;
             text-align: right;
+
         }
         &_avatar {
             width: 64px;
@@ -28,8 +51,17 @@
             border-radius: 50%;
             margin-left: 10px;
             background-color: grey;
+            @media (max-width: $breakpoint) {
+                width: 32px;
+                height: 32px;
+            }
         }
         
+    }
+    &_features {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
     &_content {
         display: flex;
