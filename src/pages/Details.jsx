@@ -7,10 +7,21 @@ import Gallery from "../components/Gallery";
 import Tag from "../components/Tag";
 import Stars from "../components/Stars";
 
+/**
+ * utilisation de useParams pour récupérer l'ID du logement à afficher à partir de l'URL,
+ * puis vérification que les données sont chargées correctement et que l'id existe,
+ * si ok : recherche le logement correspondant à l'ID dans data
+ * @returns le contenu de la page avec composants importés pour afficher les détails du logement.
+ */
 function Details() {
     const { id } = useParams();
     const location = useLocation();
 
+/**
+ * permet de récupérer les données et les stocker dans "data"
+ * notez qu'ici useEffect charge les données des logements à partir d'un fichier JSON à l'aide de la fonction fetch.
+ * Il sera possible de remplacer le chemin du fichier JSON par l'url de l'api une fois celle-ci implémentée.
+ */
     const [data, setData] = useState([]);
     useEffect(() => {
         fetch(`../logements.json`)
@@ -24,6 +35,9 @@ function Details() {
 
     console.log('je récupère les data', data)
 
+    /**
+     * permet d'afficher un message d'erreur sur la page si les données ne sont pas chargées
+     */
     if (data.length === 0) {
         return (
             <p>problème de chargement des datas</p>
