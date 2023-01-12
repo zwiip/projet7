@@ -4,7 +4,7 @@ import image from '../assets/images/banner-about.png'
 import Dropdown from '../components/Dropdown';
 
 /**
- * Permet d'afficher les éléments composant la page d'à propos
+ * Permet de structurer les éléments composant la page d'à propos
  * @returns un conteneur "about" qui affiche :
  *    - le composant banner
  *    - plusieurs composants Dropdown, et qui en définit le contenu
