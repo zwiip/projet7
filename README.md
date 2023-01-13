@@ -13,13 +13,21 @@ Démarrer le projet React et développer l’ensemble de l’application, les co
 * Développer des éléments de l'interface d'un site web grâce à des composants React
 * Configurer la navigation entre les pages de l'application avec React Router
 
-## Outils
+## Informations techniques
+
+### Outils utilisés
 * Create React App
 * React Router
 * Sass
 
-## Installation
+### Installation du projet
 * git clone https://github.com/zwiip/projet7
 * npm install
 * npm start
 * le projet devrait démarrer sur le port 3000 et s'afficher dans votre navigateur, sinon tapez http://localhost:3000/
+
+### Organisation du projet
+* Le code react est organisé selon le type d'éléments ("components" ou "pages").
+* Les routes sont gérées dans un fichier dédié (components>App.jsx)
+* Le style reprend en partie l'organisation 7-1 avec Sass ("base", "components", "pages" et "utils")
+* Les dossiers "components" et "pages" fonctionnent donc en binôme.
