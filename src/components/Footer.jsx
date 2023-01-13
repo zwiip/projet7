@@ -1,6 +1,10 @@
 import { Link } from 'react-router-dom'
 import logo from '../assets/images/logo.png'
- 
+
+/**
+ * Permet de créer le composant footer
+ * @returns Retourne un composant footer avec le logo pointant vers l'accueil et un texte indiquant les droits d'auteur.
+ */
 function Footer() {
     return (
         <footer>
