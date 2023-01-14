@@ -21,6 +21,7 @@
         color: $color-light;
         padding: 0 4%;
         border-radius: 5px;
+        z-index: 2;
         cursor: pointer;
         @media (max-width: $breakpoint) {
             font-size: 13px;
@@ -29,6 +30,9 @@
     &_content {
         padding: 1% 4%;
         background-color: $color-boxes;
+        position: relative;
+        top: -10px;
+        z-index: 1;
     }
 }
 
@@ -39,6 +43,7 @@
     }
     &_header {
         height: 47px;
+        position: relative;
         @media (max-width: $breakpoint) {
             height: 30px;
         }
@@ -50,13 +55,17 @@
             font-size: 13px;
         }
     }
-    &_content p {
+    &_content {
+        z-index: 1;
+        p {
             font-weight: $weight-regular;
             font-size: 24px;
             @media (max-width: $breakpoint) {
                 font-size: 12px;
             }
     }
+    }
+     
 }
 
 .details .dropdown-box {
