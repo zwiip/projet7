@@ -62,6 +62,9 @@
 .details .dropdown-box {
     margin: 30px 0;
     width: 47%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
     @media (max-width: $breakpoint) {
         margin: 20px 0;
         width: 100%;
@@ -79,7 +82,13 @@
             font-size: 13px;
         }
     }
-    &_content p, ul, li {
+    &_content {
+        height: 100%;
+        border-radius: 10px;
+        @media (max-width: $breakpoint) {
+            border-radius: 5px;
+        }
+        p, ul, li {
             font-weight: $weight-regular;
             list-style-type: none;
             padding-left: 0;
@@ -87,5 +96,8 @@
             @media (max-width: $breakpoint) {
                 font-size: 12px;
             }
+        }
     }
+    
+    
 }
