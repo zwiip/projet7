@@ -15,13 +15,11 @@ function Home() {
   useEffect(() => {
     fetch('./logements.json')
     .then((res) => {
-      console.log(res);
       return res.json();
     })
     .then((data) => setData(data))
     .catch((error) => console.error(error));
 }, []);
-  console.log('je récupère les data', data)
 
   return (
     <div className="Home">

@@ -1,7 +1,6 @@
 import Dropdown from "../components/Dropdown"
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from 'react';
-import { useLocation } from 'react-router-dom'
 import '../assets/styles/sass/main.scss';
 import Gallery from "../components/Gallery";
 import Tag from "../components/Tag";
@@ -15,7 +14,6 @@ import Stars from "../components/Stars";
  */
 function Details() {
     const { id } = useParams();
-    const location = useLocation();
 
 /**
  * permet de récupérer les données et les stocker dans "data"
@@ -26,14 +24,11 @@ function Details() {
     useEffect(() => {
         fetch(`../logements.json`)
             .then((res) => {
-                console.log(res);
                 return res.json();
             })
             .then((data) => setData(data))
             .catch((error) => console.error(error));
     }, []);
-
-    console.log('je récupère les data', data)
 
     /**
      * permet d'afficher un message d'erreur sur la page si les données ne sont pas chargées
